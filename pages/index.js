@@ -11,7 +11,7 @@ import Institutions from "../components/client/home/Institutions";
 import StudentTestimonial from "../components/client/home/StudentTestimonial";
 
 export async function getStaticProps() {
-  const res = await fetch(`https://rocketshipedu.com/api/home/homeView`);
+  const res = await fetch(`${process.env.BASE_URL}/api/home/homeView`);
   const data = await res.json();
 
   return { props: { data } };

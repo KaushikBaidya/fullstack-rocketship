@@ -51,27 +51,40 @@ const Navbar = () => {
           }
         >
           <ul className="flex flex-col lg:flex-row list-none lg:ml-auto text-center">
-            <li className="px-4 border-transparent border-b-4 hover:text-[#EF1C24] py-2 font-medium uppercase">
-              <Link href="/" onClick={() => setNavbarOpen(!navbarOpen)}>
+            <li className="px-4 border-transparent border-b-4  py-2 font-medium uppercase">
+              <Link
+                className="hover:text-[#EF1C24]"
+                href="/"
+                onClick={() => setNavbarOpen(!navbarOpen)}
+              >
                 HOME
               </Link>
             </li>
-            <li className="px-4 border-transparent border-b-4 hover:text-[#EF1C24] py-2 font-medium uppercase">
+            <li className="px-4 border-transparent border-b-4 py-2 font-medium uppercase">
               <Link
+                className="hover:text-[#EF1C24]"
                 href="/ourservice"
                 onClick={() => setNavbarOpen(!navbarOpen)}
               >
                 Our Services
               </Link>
             </li>
-            <li className="px-4 border-transparent border-b-4 hover:text-[#EF1C24] py-2 font-medium uppercase">
-              <Link href="/aboutus" onClick={() => setNavbarOpen(!navbarOpen)}>
+            <li className="px-4 border-transparent border-b-4 py-2 font-medium uppercase">
+              <Link
+                className="hover:text-[#EF1C24]"
+                href="/aboutus"
+                onClick={() => setNavbarOpen(!navbarOpen)}
+              >
                 About Us
               </Link>
             </li>
 
-            <li className="px-4 border-transparent border-b-4 hover:text-[#EF1C24] py-2 font-medium uppercase">
-              <Link href="/blogs" onClick={() => setNavbarOpen(!navbarOpen)}>
+            <li className="px-4 border-transparent border-b-4 py-2 font-medium uppercase">
+              <Link
+                className="hover:text-[#EF1C24]"
+                href="/blogs"
+                onClick={() => setNavbarOpen(!navbarOpen)}
+              >
                 Blogs
               </Link>
             </li>
@@ -80,7 +93,7 @@ const Navbar = () => {
                 <a onClick={() => setNavbarOpen(!navbarOpen)}>Contact</a>
               </Link>
             </li> */}
-            <li className="px-4 py-2 bg-red-400 font-medium mx-2 rounded-tl-3xl rounded-br-3xl hover:bg-[#F01C28] text-white text-center">
+            <li className="px-4 py-2 bg-red-600 font-medium mx-2 rounded-tl-3xl rounded-br-3xl hover:bg-[#f13841] text-white text-center">
               <Link href="/consult" onClick={() => setNavbarOpen(!navbarOpen)}>
                 Book A Free Consult
               </Link>

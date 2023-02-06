@@ -13,7 +13,7 @@ import Institutions from "../components/client/home/Institutions";
 import StudentsTestimonials from "../components/client/service/StudentsTestimonials";
 
 export async function getStaticProps() {
-  const res = await fetch(`https://rocketshipedu.com/api/service/serviceView`);
+  const res = await fetch(`${process.env.BASE_URL}/api/service/serviceView`);
   const data = await res.json();
 
   return { props: { data } };

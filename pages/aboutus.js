@@ -11,7 +11,7 @@ import MetaComponents from "../components/MetaComponents";
 // import Instructors from "../components/client/about/Instructors";
 
 export async function getStaticProps() {
-  const res = await fetch(`https://rocketshipedu.com/api/about/aboutView`);
+  const res = await fetch(`${process.env.BASE_URL}/api/about/aboutView`);
   const data = await res.json();
   return { props: { data } };
 }
