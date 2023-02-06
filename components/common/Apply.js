@@ -99,7 +99,7 @@ const Contact = ({ defaultValues, path, mutateAsync }) => {
           <div className="flex justify-center items-center">
             <div>
               <div className="w-24 h-24 mx-auto">
-                <Image src={Graduate} alt="" />
+                <Image src={Graduate} alt="graduate" />
               </div>
               <h3 className="mt-6 text-2xl font-bold leading-relaxed text-black">
                 Contact a Rocketship Consultant and start your journey for

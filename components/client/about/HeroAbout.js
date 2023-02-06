@@ -23,7 +23,7 @@ const HeroAbout = ({ data }) => {
             src={tmp.image}
             width={500}
             height={500}
-            alt=""
+            alt={tmp.title}
           />
         </div>
       </div>

@@ -77,7 +77,7 @@ const InnovativeCounselling = () => {
             </div>
           </div>
           <div className="max-w-[500px] mx-2 lg:mx-auto my-2">
-            <Image src={Service} alt="" />
+            <Image src={Service} alt="service" />
             <p className="px-5 text-[16px]">
               Our online college platform, enables you to engage with your
               college admissions coach and the latest admissions data for

@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import contact from "../public/gallery/Consultative sales-amico.png";
+import contact from "../public/gallery/Consultative.png";
 import { usePostData } from "../hooks/DataApi";
 import ConsultForm from "../components/admin/forms/ConsultForm";
 
@@ -26,7 +26,7 @@ const Consult = () => {
           <div className="text-[#251B37]">Book your consult date</div>
         </div>
         <div className="pb-40">
-          <Image src={contact} width={400} height={500} alt="" />
+          <Image src={contact} width={400} height={500} alt="contact" />
         </div>
       </div>
       <div className="max-w-lg mx-auto py-10">

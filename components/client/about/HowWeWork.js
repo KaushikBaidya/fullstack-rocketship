@@ -15,7 +15,7 @@ const HowWeWork = () => {
           <div className="flex justify-center items-center ">
             <div className="py-5">
               <div className="w-3/4 mx-auto ">
-                <Image src={Picture} alt="" />
+                <Image src={Picture} alt="our work structure" />
               </div>
               <p className="mt-4 text-2xl text-center font-medium">
                 2.5x likely to get an admission.

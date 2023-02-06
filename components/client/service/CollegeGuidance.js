@@ -32,7 +32,7 @@ const CollegeGuidance = () => {
               ></div>
 
               <div className="relative flex items-center justify-center flex-shrink-0 w-16 h-16 bg-shapeRed bg-no-repeat">
-                <Image src={Research} width={40} alt="" />
+                <Image src={Research} width={40} alt="research" />
               </div>
               <div className="ml-6">
                 <h3 className="text-[1.2rem] font-semibold text-[#211A56]">
@@ -54,7 +54,7 @@ const CollegeGuidance = () => {
               ></div>
 
               <div className="relative flex items-center justify-center flex-shrink-0 w-16 h-16 bg-shapeRed bg-no-repeat">
-                <Image src={Application} width={30} alt="" />
+                <Image src={Application} width={30} alt="application" />
               </div>
               <div className="ml-6">
                 <h3 className="text-[1.2rem] font-semibold text-[#211A56]">
@@ -77,7 +77,7 @@ const CollegeGuidance = () => {
                 aria-hidden="true"
               ></div>
               <div className="relative flex items-center justify-center flex-shrink-0 w-16 h-16 bg-shapeRed bg-no-repeat">
-                <Image src={Guidance} width={35} alt="" />
+                <Image src={Guidance} width={35} alt="guidence" />
               </div>
               <div className="ml-6">
                 <h3 className="text-[1.2rem] font-semibold text-[#211A56]">
@@ -100,7 +100,7 @@ const CollegeGuidance = () => {
                 aria-hidden="true"
               ></div>
               <div className="relative flex items-center justify-center flex-shrink-0 w-16 h-16 bg-shapeRed bg-no-repeat">
-                <Image src={Testing} width={30} alt="" />
+                <Image src={Testing} width={30} alt="testing" />
               </div>
               <div className="ml-6">
                 <h3 className="text-[1.2rem] font-semibold text-[#211A56]">
@@ -116,7 +116,7 @@ const CollegeGuidance = () => {
 
             <li className="relative flex items-start">
               <div className="relative flex items-center justify-center flex-shrink-0 w-16 h-16 bg-shapeRed bg-no-repeat">
-                <Image src={EssayReview} width={30} alt="" />
+                <Image src={EssayReview} width={30} alt="essay review" />
               </div>
               <div className="ml-6">
                 <h3 className="text-[1.2rem] font-semibold text-[#211A56]">

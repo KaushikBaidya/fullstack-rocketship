@@ -95,11 +95,11 @@ const getBlogPermalink = async (permalink) => {
 
 const getBlogsPublished = async () => {
   try {
-    const connection = await mysql.createConnection(mysqlConfig);
+    const connection = mysql.createConnection(mysqlConfig);
     const [rows] = await connection.query(
       `SELECT blogId, title, permalink, img FROM blog WHERE isPublished = '1'`
     );
-    connection.end(console.log("connection ended"));
+    // connection.end(console.log("connection ended"));
     return rows;
   } catch (e) {
     console.error(e);

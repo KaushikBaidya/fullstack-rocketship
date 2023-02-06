@@ -24,7 +24,12 @@ const Navbar = () => {
         <div className="w-full flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
           <Link href="/">
             <div className="w-20 mx-5 cursor-pointer ">
-              <Image src={logoPic} width={100} height={100} alt="" />
+              <Image
+                src={logoPic}
+                width={100}
+                height={100}
+                alt="Rocketship Logo"
+              />
             </div>
           </Link>
           <button

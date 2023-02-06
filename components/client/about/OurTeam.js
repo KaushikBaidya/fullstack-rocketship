@@ -99,7 +99,11 @@ const OurTeam = () => {
               </div>
               <div className="flex flex-col items-center justify-center bg-white p-4 drop-shadow-lg rounded-xl">
                 <div className="inline-flex shadow-lg border border-gray-200 rounded-full overflow-hidden h-40 w-40">
-                  <Image src={kaushik} alt="" className="h-full w-full" />
+                  <Image
+                    src={kaushik}
+                    alt="team member"
+                    className="h-full w-full"
+                  />
                 </div>
 
                 <h2 className="mt-4 font-bold text-xl">Kaushik Baidya</h2>

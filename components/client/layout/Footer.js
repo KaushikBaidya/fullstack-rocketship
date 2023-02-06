@@ -21,7 +21,12 @@ const Footer = () => {
             <div className="grid grid-cols-1 justify-items-center">
               <Link href="/">
                 <div className="px-5">
-                  <Image src={logoPic} width={100} height={100} alt="" />
+                  <Image
+                    src={logoPic}
+                    width={100}
+                    height={100}
+                    alt="rocketship logo"
+                  />
                 </div>
               </Link>
             </div>
