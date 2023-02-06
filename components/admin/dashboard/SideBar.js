@@ -23,8 +23,6 @@ import {
 import { BsGraphDown } from "react-icons/bs";
 
 function SideBar({ action }) {
-  const value = useGlobalContext();
-
   return (
     <div className="fixed w-[200px] grid grid-rows-twoRows h-screen overflow-hidden bg-dark">
       <div className="grid place-content-center bg-purple-100 shadow-lg">
