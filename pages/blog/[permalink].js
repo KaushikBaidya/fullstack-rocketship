@@ -6,6 +6,8 @@ export async function getServerSideProps(context) {
   const res = await fetch(`${process.env.BASE_URL}/api/blog/${permalink}`);
   const data = await res.json();
 
+  console.log(data);
+
   return { props: { data } };
 }
 

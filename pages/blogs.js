@@ -4,20 +4,13 @@ import Link from "next/link";
 import Head from "next/head";
 import { Loader } from "../components/common/Loader";
 
-export async function getStaticProps() {
-  const res = await fetch(`https://rocketshipedu.com/api/getPublishedBlogs`);
+export async function getServerSideProps() {
+  const res = await fetch(`${process.env.BASE_URL}/api/getPublishedBlogs`);
   const data = await res.json();
   console.log(data);
 
   return { props: { data } };
 }
-// export async function getServerSideProps() {
-//   const res = await fetch(`${process.env.BASE_URL}/api/getPublishedBlogs`);
-//   const data = await res.json();
-//   console.log(data);
-
-//   return { props: { data } };
-// }
 
 const Blogs = ({ data }) => {
   if (!data) return <Loader />;

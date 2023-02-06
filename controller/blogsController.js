@@ -95,7 +95,7 @@ const getBlogPermalink = async (permalink) => {
 
 const getBlogsPublished = async () => {
   try {
-    const connection = mysql.createConnection(mysqlConfig);
+    const connection = await mysql.createConnection(mysqlConfig);
     const [rows] = await connection.query(
       `SELECT blogId, title, permalink, img FROM blog WHERE isPublished = '1'`
     );
