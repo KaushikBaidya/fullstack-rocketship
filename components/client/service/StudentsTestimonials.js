@@ -16,16 +16,16 @@ const StudentsTestimonials = ({ data }) => {
 
   const tmp = data;
   return (
-    <main className="bg-[#211A55] px-10 mt-10">
-      <div className="xl:max-w-screen-xl mx-auto md:py-12 lg:px-20 md:px-6 py-9 px-4">
-        <div className=" grid grid-cols-1 lg:grid-cols-2 md:space-x-8">
+    <main className="bg-[#211A55] px-5 mt-10 ">
+      <div className="xl:max-w-screen-lg mx-auto md:py-12 py-9 px-4">
+        <div className=" grid grid-cols-1 lg:grid-cols-2 md:space-x-4">
           <div className="flex justify-center items-center">
             <Image
               src={feedback}
               alt="Img of Glass bottle"
               className="hidden md:block"
-              width={900}
-              height={700}
+              width={450}
+              height={400}
             />
           </div>
           <div className="w-full">

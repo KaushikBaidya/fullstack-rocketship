@@ -4,11 +4,11 @@ import Quote from "../../../public/icons/Quotation-Mark.png";
 import ProgressLine from "../../common/ProgressLine";
 const Trusted = () => {
   return (
-    <section className="py-10">
+    <section className="xl:max-w-screen-lg mx-auto py-10">
       <h1 className="text-[24px] text-[#211A56] font-semibold lg:text-[36px] text-center px-5">
         Preferred by Students and Families
       </h1>
-      <div className="max-w-6xl mx-auto mt-10 mb-5 px-5">
+      <div className="mt-10 mb-5 px-5">
         <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-24 gap-y-10">
           <div className="flex justify-center items-center">
             <div>
@@ -63,7 +63,7 @@ const Trusted = () => {
                 stress out of it. You guys are amazing!
               </p>
               <h2 className="text-[#211A56] font-semibold text-xl ">
-                Kelly M.
+                Hamida Akter
               </h2>
               <p className="my-2">son admitted to University of Chicago</p>
             </div>

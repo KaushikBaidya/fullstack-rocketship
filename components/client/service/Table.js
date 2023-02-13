@@ -3,7 +3,7 @@ import React from "react";
 const Table = () => {
   return (
     <section>
-      <div className="xl:max-w-screen-xl px-5 mx-auto my-10">
+      <div className="xl:max-w-screen-lg mx-auto px-5 my-10">
         <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-24 gap-y-10">
           <div className="flex justify-center items-center">
             <div>

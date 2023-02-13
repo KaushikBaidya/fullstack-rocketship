@@ -28,9 +28,9 @@ const Blogs = ({ data }) => {
           />
         </Head>
         {/* <MetaComponents title={tmp.title} keywords={tmp.keywords} /> */}
-        <div className="w-full grid grid-cols-1 justify-items-center content-center mb-20">
+        <div className="xl:max-w-screen-lg mx-auto grid grid-cols-1 justify-items-center content-center mb-20">
           <div className="flex flex-col items-center mx-auto mb-5">
-            <h2 className="text-[24px] text-[#211A56] font-semibold lg:text-[45px] text-center px-5 uppercase tracking-wider">
+            <h2 className="text-xl text-[#211A56] font-semibold lg:text-4xl text-center px-5 uppercase tracking-wider">
               Our Blogs
             </h2>
           </div>
@@ -45,7 +45,7 @@ const Blogs = ({ data }) => {
                   className="w-full rounded-t-lg object-cover object-center h-[200px]"
                 />
                 <div className="px-6 py-4 bg-white grid gap-4">
-                  <h2 className="text-xl font-semibold text-gray-800">
+                  <h2 className="text-lg font-semibold text-gray-800">
                     {item.title}
                   </h2>
 

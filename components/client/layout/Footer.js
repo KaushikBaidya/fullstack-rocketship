@@ -14,7 +14,7 @@ import logoPic from "../../../public/logo.png";
 
 const Footer = () => {
   return (
-    <footer className="max-w-screen-2xl mx-auto mt-10">
+    <footer className="xl:max-w-screen-lg mx-auto mt-10">
       <div className="w-full grid grid-cols-1 justify-items-center mt-10 ">
         <div className="w-full grid grid-cols-1 md:grid-cols-3 justify-items-center gap-y-2 py-2 mt-2">
           <div className="">
@@ -23,8 +23,8 @@ const Footer = () => {
                 <div className="px-5">
                   <Image
                     src={logoPic}
-                    width={100}
-                    height={100}
+                    width={80}
+                    height={80}
                     alt="rocketship logo"
                   />
                 </div>
@@ -64,15 +64,17 @@ const Footer = () => {
             </p>
             <p className="text-sm lg:text-lg text-[#EF1C26] font-normal text-center px-5 flex items-center gap-2 my-3">
               <FiMapPin />
-              <span className="text-lg text-gray-700">USA</span>
+              <span className="text-base text-gray-700">USA</span>
             </p>
             <p className="text-sm lg:text-lg text-[#EF1C26] font-normal text-center px-5 flex items-center gap-2 my-3">
               <FiMail />
-              <span className="text-lg text-gray-700">info@rocketship.com</span>
+              <span className="text-base text-gray-700">
+                info@rocketship.com
+              </span>
             </p>
             <p className="text-sm lg:text-lg text-[#EF1C26] font-normal text-center px-5 flex items-center gap-2 my-3">
               <FiPhoneCall />
-              <span className="text-lg text-gray-700">646-861-8089</span>
+              <span className="text-base text-gray-700">646-861-8089</span>
             </p>
           </div>
 
@@ -80,7 +82,7 @@ const Footer = () => {
             <p className="text-2xl text-[#EF1C26] font-semibold  text-center px-5 mt-2 mb-4">
               Quick Links
             </p>
-            <div className="text-[#211A56] text-lg grid grid-cols-1 justify-items-center">
+            <div className="text-[#211A56] text-base grid grid-cols-1 justify-items-center">
               <p className="hover:text-[#EF1C26]">
                 <Link href="/">Home</Link>
               </p>

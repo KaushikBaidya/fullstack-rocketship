@@ -26,15 +26,15 @@ const VisaProcess = ({ data }) => {
           Visa Process
         </h1>
       </div>
-      <div className="xl:max-w-screen-xl grid grid-cols-1 lg:grid-cols-2 pb-5 lg:py-10 mx-auto">
+      <div className="xl:max-w-screen-lg grid grid-cols-1 lg:grid-cols-2 pb-5 lg:py-10 mx-auto">
         <div className="mx-5 lg:mx-10 text-center lg:text-left">
-          <h3 className="text-xl lg:text-2xl font-semibold text-[#211A53] pb-5 text-left">
+          <h3 className="text-xl lg:text-[20px] font-semibold text-[#211A53] pb-5 text-left">
             {tmp.title}
           </h3>
-          <p className="text-lg text-left md:text-justify pr-5">
+          <p className="text-base text-left md:text-justify pr-5">
             {tmp.subtitle}
           </p>
-          <p className="text-lg text-left md:text-justify pr-5 mt-5">
+          <p className="text-base text-left md:text-justify pr-5 mt-5">
             {tmp.subtitle2}
           </p>
           <div className="mt-10 text-sm font-medium">

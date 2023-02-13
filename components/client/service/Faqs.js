@@ -9,18 +9,18 @@ const Faq = () => {
   const [show4, setShow4] = useState(false);
 
   return (
-    <div className="xl:max-w-screen-xl mx-auto md:py-5 px-5 lg:px-20">
-      <div className="grid grid-cols-1 lg:grid-cols-2 md:space-x-16 mt-8">
+    <div className="xl:max-w-screen-lg mx-auto md:py-5 px-5 lg:px-10">
+      <div className="grid grid-cols-1 lg:grid-cols-2 md:space-x-8 mt-8">
         <div className="w-full">
           <Image
             src={faqs}
             alt="Img of Glass bottle"
             className="w-full md:block hidden"
-            width={900}
-            height={700}
+            width={450}
+            height={400}
           />
         </div>
-        <div className="w-full">
+        <div className="w-full px-2">
           <h2 className=" font-semibold lg:text-3xl text-xl lg:leading-9 md:leading-7 leading-9 text-gray-800 mb-5 lg:mb-10">
             Frequently Asked Questions
           </h2>

@@ -1,5 +1,4 @@
 import React from "react";
-import Head from "next/head";
 import HeroAbout from "../components/client/about/HeroAbout";
 import HowWeWork from "../components/client/about/HowWeWork";
 import OurTeam from "../components/client/about/OurTeam";

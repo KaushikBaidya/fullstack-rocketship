@@ -20,14 +20,14 @@ const Navbar = () => {
   }, []);
   return (
     <header className="fixed w-full bg-[#ffffff] z-50 drop-shadow-md">
-      <div className="xl:max-w-screen-xl mx-auto flex flex-wrap items-center justify-between  py-2  text-black ">
+      <div className="xl:max-w-screen-lg mx-auto flex flex-wrap items-center justify-between  py-2  text-black ">
         <div className="w-full flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
           <Link href="/">
             <div className="w-20 mx-5 cursor-pointer ">
               <Image
                 src={logoPic}
-                width={100}
-                height={100}
+                width={70}
+                height={70}
                 alt="Rocketship Logo"
               />
             </div>
@@ -50,7 +50,7 @@ const Navbar = () => {
             (navbarOpen ? "flex" : " hidden")
           }
         >
-          <ul className="flex flex-col lg:flex-row list-none lg:ml-auto text-center">
+          <ul className="flex flex-col lg:flex-row list-none lg:ml-auto text-center text-base">
             <li className="px-4 border-transparent border-b-4  py-2 font-medium uppercase">
               <Link
                 className="hover:text-[#EF1C24]"

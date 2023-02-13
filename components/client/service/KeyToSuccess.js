@@ -8,7 +8,7 @@ SwiperCore.use([Pagination, Autoplay]);
 
 const KeyToSuccess = () => {
   return (
-    <div className="xl:max-w-screen-xl mx-auto py-12 px-5">
+    <div className="xl:max-w-screen-lg mx-auto py-12 px-5">
       <h2 className="lg:text-3xl font-semibold text-2xl">
         Standing Out is the Key to Success
       </h2>
@@ -18,7 +18,7 @@ const KeyToSuccess = () => {
             <h3 className="text-xl lg:text-2xl font-semibold ">
               Challenges faced by High School Students
             </h3>
-            <p className="text-base">
+            <p className="text-base mt-2">
               At elite institutes, admission officers are not just looking for
               good grades and test scores. What truly matters is how you stand
               out and that is a major challenge that students face in the
@@ -30,7 +30,7 @@ const KeyToSuccess = () => {
             <h3 className="text-xl lg:text-2xl font-semibold">
               How Rocketship Education Students Succeed
             </h3>
-            <p className="text-base">
+            <p className="text-base mt-2">
               Rocketship Education helps Bangladeshi students develop a college
               application that will help them get noticed. Through our
               personalized counselling and college essay writing, we assist

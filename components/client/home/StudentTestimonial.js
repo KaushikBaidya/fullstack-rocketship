@@ -16,7 +16,7 @@ const StudentTestimonial = ({ data }) => {
     <section className="bg-white antialiased ">
       <div className="bg-sbanner bg-fixed">
         <div className="bg-[#221a55dc] text-white backdrop-blur-none  gap-y-3 px-10 py-20 justify-items-center content-center mx-auto">
-          <div className="xl:max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-5">
+          <div className="xl:max-w-screen-lg mx-auto grid grid-cols-1 lg:grid-cols-5">
             <div className="col-span-2">
               <p className="text-left text-base font-thin px-3">Reviews</p>
               <p className="text-xl md:text-3xl px-3">
@@ -50,19 +50,19 @@ const StudentTestimonial = ({ data }) => {
                       return (
                         <SwiperSlide key={item.testimonialId}>
                           <div className="w-full flex flex-col mx-auto my-2 bg-white rounded-tl-3xl rounded-br-3xl p-5 justify-evenly h-full">
-                            <div className="w-[70px] h-[70px] lg:w-[100px] lg:h-[100px] ml-5 mt-2 rounded-full overflow-hidden">
+                            <div className="w-[50px] h-[50px] lg:w-[80px] lg:h-[80px] ml-5 mt-2 rounded-full overflow-hidden">
                               <Image
                                 src={item.img}
                                 alt={item.title}
-                                width={200}
-                                height={200}
+                                width={150}
+                                height={150}
                               />
                             </div>
-                            <p className="text-sm lg:text-base text-justify text-gray-700 m-5">
+                            <p className="text-xs lg:text-sm text-justify text-gray-700 m-5">
                               {item.description}
                             </p>
 
-                            <h3 className="text-lg lg:text-xl text-[#221a55] font-semibold mx-5">
+                            <h3 className="text-xs lg:text-sm text-[#221a55] font-semibold mx-5">
                               {item.title}
                             </h3>
                             <p className="text-sm text-gray-700 mx-5 my-2">

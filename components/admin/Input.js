@@ -16,7 +16,7 @@ const Input = ({
       {showPlaceHolder === false && <label>{label}</label>}
       <input
         type={type}
-        className="form-new-input"
+        className="form-new-input form-height"
         {...register(name)}
         autoFocus={isAutoFocus}
         readOnly={isReadOnly}

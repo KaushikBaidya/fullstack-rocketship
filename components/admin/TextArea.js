@@ -6,7 +6,7 @@ const TextArea = ({
   control,
   name,
   label,
-  areaHeight = "h-36",
+  areaHeight = "h-32",
   errorMessage = "",
   isAutoFocus = false,
   isReadOnly = false,

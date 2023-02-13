@@ -16,7 +16,7 @@ const OurTeam = () => {
             </h2>
           </div>
           <div className="py-2">
-            <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <div className="xl:max-w-screen-lg mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
               <div className="flex flex-col items-center justify-center bg-white p-4 drop-shadow-lg rounded-lg">
                 <div className="inline-flex shadow-lg border border-gray-200 rounded-full overflow-hidden h-40 w-40">
                   <Image

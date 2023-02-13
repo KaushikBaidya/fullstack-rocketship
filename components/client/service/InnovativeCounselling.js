@@ -1,12 +1,12 @@
 import React from "react";
 import Image from "next/image";
-import Service from "../../../public/gallery/rocketShip1.png";
+import Service from "../../../public/gallery/counselling.png";
 import { GiGraduateCap } from "react-icons/gi";
 
 const InnovativeCounselling = () => {
   return (
     <main>
-      <section className="max-w-6xl mx-auto lg:pb-10">
+      <section className="xl:max-w-screen-lg mx-auto lg:pb-10">
         <div className="mb-8">
           <h1 className="text-[24px] text-[#211A56] font-semibold lg:text-[36px] text-center px-5">
             Innovative Counseling
@@ -76,9 +76,11 @@ const InnovativeCounselling = () => {
               </div>
             </div>
           </div>
-          <div className="max-w-[500px] mx-2 lg:mx-auto my-2">
-            <Image src={Service} alt="service" />
-            <p className="px-5 text-[16px]">
+          <div className="max-w-[350px] mx-2 lg:mx-auto my-2">
+            <div className="flex items-center justify-center">
+              <Image src={Service} alt="service" />
+            </div>
+            <p className="px-5 text-sm mt-2">
               Our online college platform, enables you to engage with your
               college admissions coach and the latest admissions data for
               colleges nationwide

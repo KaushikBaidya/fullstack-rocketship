@@ -94,7 +94,7 @@ const Contact = ({ defaultValues, path, mutateAsync }) => {
 
   return (
     <section>
-      <div className="xl:max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8 lg:py-10">
+      <div className="xl:max-w-screen-lg px-4 mx-auto sm:px-6 lg:px-8 lg:py-10">
         <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-24 gap-y-10">
           <div className="flex justify-center items-center">
             <div>
@@ -127,7 +127,7 @@ const Contact = ({ defaultValues, path, mutateAsync }) => {
                   process
                 </li>
               </ul>
-              <p className="text-2xl text-[#4e2ddf]">Lets Get Started !</p>
+              <p className="text-2xl text-[#4e2ddf] mt-4">Lets Get Started !</p>
             </div>
           </div>
 

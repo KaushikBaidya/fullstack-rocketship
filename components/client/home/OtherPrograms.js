@@ -14,7 +14,7 @@ const OtherPrograms = () => {
           </h1>
         </div>
         <div className="py-2">
-          <div className="xl:max-w-screen-xl grid grid-cols-1 md:grid-cols-3 mx-auto gap-10">
+          <div className="xl:max-w-screen-lg grid grid-cols-1 md:grid-cols-3 mx-auto gap-10">
             <div className="w-full flex bg-white flex-col h-full py-10 px-5 rounded-tl-3xl rounded-br-3xl drop-shadow-2xl justify-evenly">
               <div className="py-2 w-14">
                 <Image src={accepted} alt="accepted" />
@@ -22,7 +22,7 @@ const OtherPrograms = () => {
               <h2 className="text-[#211A56] font-semibold text-xl">
                 2x more to be accepted
               </h2>
-              <p className="">
+              <p className="text-sm">
                 Become 2x more likely get your visa approved and nail the
                 interview and get hired.
               </p>
@@ -34,7 +34,7 @@ const OtherPrograms = () => {
               <h2 className="text-[#211A56] font-semibold text-xl">
                 Documents Ready.
               </h2>
-              <p className="">
+              <p className="text-sm">
                 Get a complete audit of the documents need and guidance on what
                 to present.
               </p>
@@ -46,7 +46,7 @@ const OtherPrograms = () => {
               <h2 className="text-[#211A56] font-semibold text-xl">
                 Cut 2 Months
               </h2>
-              <p className="">
+              <p className="text-sm">
                 Expedite the visa process by 2 months with Rocketship
               </p>
             </div>

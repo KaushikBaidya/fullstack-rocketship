@@ -17,12 +17,12 @@ const Institutions = ({ data }) => {
     <section className="min-h-full py-14">
       <div className="h-full grid grid-cols-1 content-center">
         <div className="max-w-4xl mx-auto pb-5">
-          <h1 className="text-2xl lg:text-4xl font-semibold text-[#221a55] px-10 py-2 text-center">
+          <h1 className="text-2xl lg:text-[30px] font-semibold text-[#221a55] px-10 py-2 text-center">
             Our students have earned admissions to these and other top schools
           </h1>
         </div>
         <div className="py-2">
-          <div className="max-w-[1300px] mx-auto px-10">
+          <div className="xl:max-w-screen-lg mx-auto px-10">
             <Swiper
               slidesPerView="auto"
               spaceBetween={10}

@@ -42,17 +42,14 @@ const HeroService = ({ data }) => {
             ></path>
           </svg>
         </div>
-        <div className="xl:max-w-screen-xl grid grid-cols-1 md:grid-cols-2 pt-28 pb-5 lg:pb-28 mx-auto z-10">
-          <div className="mx-10 lg:mx-20 text-center z-10">
-            <h1 className="text-[#211A56] lg:text-white text-2xl lg:text-5xl text-center md:text-left font-medium py-5 ">
+        <div className="xl:max-w-screen-lg grid grid-cols-1 md:grid-cols-2 pt-28 pb-5 lg:pb-28 mx-auto z-10">
+          <div className="mx-2 text-center  z-10">
+            <h1 className="text-[#211A56] lg:text-white text-2xl lg:text-4xl text-center md:text-left font-medium py-5 ">
               {tmp.title}
             </h1>
-            <h2 className="text-[#211A56] lg:text-white text-base text-center md:text-left lg:text-lg py-5">
+            <h2 className="text-[#211A56] lg:text-white text-sm text-center md:text-left lg:text-base py-5">
               {tmp.subtitle}
             </h2>
-            {/* <button className="px-10 py-3 text-[#211A56] bg-white border-2 border-[#F11B25] mr-4 rounded-tl-3xl rounded-br-3xl hover:shadow-red-500 hover:shadow-lg hover:bg-[#F11b25] hover:text-white my-5">
-              Find Out More
-            </button> */}
           </div>
 
           <div className="flex items-center justify-center mx-5">

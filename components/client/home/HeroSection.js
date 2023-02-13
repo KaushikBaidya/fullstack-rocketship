@@ -12,13 +12,13 @@ const HeroSection = ({ data }) => {
   return (
     <section className="bg-white antialiased ">
       <div className="lg:bg-sbanner bg-fixed">
-        <div className="w-full bg-gradient-to-r from-[#221a55fa] to-[#5443c5e8]">
-          <div className="xl:max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-2 py-20 z-10">
+        <div className="w-full bg-gradient-to-r from-[#302764fa] to-[#9588e9e8]">
+          <div className="max-w-screen-lg mx-auto grid grid-cols-1 lg:grid-cols-2 py-20 z-10">
             <div className="mx-5 text-center lg:text-left">
-              <h1 className="text-2xl lg:text-[50px] leading-snug font-medium text-white pb-5 pt-20">
+              <h1 className="text-2xl lg:text-[44px] leading-snug font-medium text-white pb-5 pt-20">
                 {tmp.title}
               </h1>
-              <h2 className=" text-white text-center lg:text-left text-base lg:text-lg pr-5">
+              <h2 className="text-white text-center lg:text-left text-sm lg:text-base pr-5">
                 {tmp.subtitle}
               </h2>
               <div className="mt-10 text-sm font-medium">
@@ -35,7 +35,7 @@ const HeroSection = ({ data }) => {
               </div>
             </div>
             <div className="hidden lg:flex items-center justify-center mx-5">
-              <div className="max-w-[550px] pt-20">
+              <div className="max-w-md">
                 <Image
                   src={tmp.image}
                   //   src={`https://drive.google.com/uc?export=view&id=${tmp.image1}`}

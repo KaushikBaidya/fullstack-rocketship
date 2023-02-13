@@ -29,7 +29,7 @@ const BlogsSection = ({ data }) => {
               Latest Blog Posts
             </h1>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-6xl gap-5 p-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-5xl gap-5 p-5">
             {tmp.map((item) => (
               <div key={item.blogId} className="grid rounded-lg shadow-lg">
                 <Image
@@ -37,10 +37,10 @@ const BlogsSection = ({ data }) => {
                   alt="Blog title"
                   width={381}
                   height={200}
-                  className="w-full rounded-t-lg object-cover object-center h-[200px]"
+                  className="w-full rounded-t-lg object-cover object-center h-[150px]"
                 />
                 <div className="px-6 py-4 bg-white grid gap-4">
-                  <h2 className="text-xl font-semibold text-gray-800">
+                  <h2 className="text-lg font-semibold text-gray-800">
                     {item.title}
                   </h2>
 
