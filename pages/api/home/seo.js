@@ -20,14 +20,16 @@ export default async function handler(req, res) {
       const updateTitle = req.body.title;
       const updateDescription = req.body.description;
       const updateKeywords = req.body.keywords;
-      const updatefacebook = req.body.facebookApp;
+      const updateFacebook = req.body.facebookApp;
+      const updateGoogle = req.body.googleId;
       const updateImage = req.body.image;
 
       result = await updateHomeSeo(
         updateTitle,
         updateDescription,
         updateKeywords,
-        updatefacebook,
+        updateFacebook,
+        updateGoogle,
         updateImage
       );
       res.status(204).end("end");

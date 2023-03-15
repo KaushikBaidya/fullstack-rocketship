@@ -77,13 +77,3 @@ export {
   updateInstitution,
   deleteInstitutionId,
 };
-
-// const institution = {
-//   getInstitution,
-//   getInstitutionById,
-//   createInstitution,
-//   updateInstitution,
-//   deleteInstitutionId,
-// };
-
-// module.exports = institution;

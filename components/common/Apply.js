@@ -19,9 +19,14 @@ const schema = yup.object({
   last_name: yup.string().required("Required.").max(50),
   user_email: yup.string().required("Required.").max(50),
   phone_number: yup.string().required("Required.").max(50),
-  user_identity: yup.string().required("Required"),
+  // user_education: yup.string().required("Required"),
   user_year: yup.string().required("Required"),
+  destination: yup.string().required("Required."),
+  user_counseling: yup.string().required("Required."),
+  user_study: yup.string().required("Required."),
+  user_fund: yup.string().required("Required."),
   social_media: yup.string().required("Required."),
+  user_graduation: yup.string().required("Required."),
   description: yup.string().required("Required."),
 });
 
@@ -43,8 +48,13 @@ const Contact = ({ defaultValues, path, mutateAsync }) => {
     last_name,
     user_email,
     phone_number,
-    user_identity,
+    // user_education,
+    user_counseling,
     user_year,
+    user_graduation,
+    destination,
+    user_fund,
+    user_study,
     social_media,
     description,
   } = errors;
@@ -56,8 +66,12 @@ const Contact = ({ defaultValues, path, mutateAsync }) => {
       last_name: formData.last_name,
       user_email: formData.user_email,
       phone_number: formData.phone_number,
-      user_identity: formData.user_identity,
+      // user_education: formData.user_education,
       user_year: formData.user_year,
+      destination: formData.destination,
+      user_fund: formData.user_fund,
+      user_study: formData.user_study,
+      user_graduation: formData.user_graduation,
       social_media: formData.social_media,
       description: formData.description,
     };
@@ -165,33 +179,46 @@ const Contact = ({ defaultValues, path, mutateAsync }) => {
                   />
                   <SelectFromOptions
                     register={register}
-                    options={[
-                      "Student",
-                      "Parent",
-                      "Guardian",
-                      "School Administrator/Counselor",
-                      "Employer",
-                      "Other",
-                    ]}
-                    label="I am a..."
-                    name="user_identity"
-                    errorMessage={user_identity?.message}
+                    options={["USA"]}
+                    label="Your preferred study destination "
+                    name="destination"
+                    errorMessage={destination?.message}
                   />
                   <SelectFromOptions
                     register={register}
                     options={[
-                      "2023",
-                      "2024",
-                      "2025",
-                      "2026",
-                      "Gap Year",
-                      "Transfer",
+                      "APR 2023",
+                      "MAY 2023",
+                      "JUN 2023",
+                      "JUL 2023",
+                      "AUG 2023",
+                      "SEP 2023",
+                      "DEC 2023",
                     ]}
-                    label="Expected Graduation Year"
+                    label="When do you plan to study?"
                     name="user_year"
                     errorMessage={user_year?.message}
                   />
                   <SelectFromOptions
+                    register={register}
+                    options={["In Person", "Virtual Counseling"]}
+                    label="Preferred mode of counselling?"
+                    name="user_counseling"
+                    errorMessage={user_counseling?.message}
+                  />
+                  <SelectFromOptions
+                    register={register}
+                    options={[
+                      "Self Funded",
+                      "Parents",
+                      "Bank Loan",
+                      "Seeking Scholarship",
+                    ]}
+                    label="How would you fund your education?"
+                    name="user_fund"
+                    errorMessage={user_fund?.message}
+                  />
+                  {/* <SelectFromOptions
                     register={register}
                     options={[
                       "Instagram",
@@ -201,9 +228,42 @@ const Contact = ({ defaultValues, path, mutateAsync }) => {
                       "LinkedIn",
                       "Other",
                     ]}
+                    label="How would you fund your education?"
+                    name="user_education"
+                    errorMessage={user_education?.message}
+                  /> */}
+                  <SelectFromOptions
+                    register={register}
+                    options={[
+                      "Postgraduate",
+                      "Undergraduate",
+                      "Vocational",
+                      "Doctorate",
+                    ]}
+                    label="Preferred study level "
+                    name="user_study"
+                    errorMessage={user_study?.message}
+                  />
+                  <SelectFromOptions
+                    register={register}
+                    options={[
+                      "Instagram",
+                      "Youtube",
+                      "Facebook",
+                      "LinkedIn",
+                      "Word of Mouth",
+                      "Other",
+                    ]}
                     label="How did you hear about us?"
                     name="social_media"
                     errorMessage={social_media?.message}
+                  />
+                  <Input
+                    name="user_graduation"
+                    label="Graduation or HSC completion date"
+                    type="text"
+                    register={register}
+                    errorMessage={user_graduation?.message}
                   />
                   <TextArea
                     control={control}

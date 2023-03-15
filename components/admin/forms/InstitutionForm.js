@@ -79,7 +79,7 @@ const InstitutionForm = ({ defaultValues, path, mutateAsync, btnText }) => {
       <input type="hidden" {...register("institutionId")} />
 
       <div className="form-col">
-        {imageUrl.length > 0 ? (
+        {imageUrl?.length > 0 ? (
           <Image src={imageUrl} alt="PHOTO" width={200} height={100} />
         ) : (
           <span></span>

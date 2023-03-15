@@ -12,22 +12,46 @@ const getHomeSeo = async () => {
   }
 };
 
+const getFacebook = async () => {
+  try {
+    const connection = await mysql.createConnection(mysqlConfig);
+    const [rows] = await connection.query("SELECT facebookApp FROM `home_seo`");
+    connection.end(console.log("connection ended seo"));
+    return rows[0];
+  } catch (e) {
+    console.error(e);
+  }
+};
+
+const getGoogle = async () => {
+  try {
+    const connection = await mysql.createConnection(mysqlConfig);
+    const [rows] = await connection.query("SELECT googleId FROM `home_seo`");
+    connection.end(console.log("connection ended seo"));
+    return rows[0];
+  } catch (e) {
+    console.error(e);
+  }
+};
+
 const updateHomeSeo = async (
   updateTitle,
   updateDescription,
   updateKeywords,
-  updatefacebook,
+  updateFacebook,
+  updateGoogle,
   updateImage
 ) => {
   try {
     const connection = await mysql.createConnection(mysqlConfig);
     const [rows] = await connection.query(
-      "UPDATE home_seo SET title = ?, description = ?, keywords = ?, facebookApp = ?, image = ? WHERE seoId  = '1'",
+      "UPDATE home_seo SET title = ?, description = ?, keywords = ?, facebookApp = ?, googleId = ?, image = ? WHERE seoId  = '1'",
       [
         updateTitle,
         updateDescription,
         updateKeywords,
-        updatefacebook,
+        updateFacebook,
+        updateGoogle,
         updateImage,
       ]
     );
@@ -38,4 +62,4 @@ const updateHomeSeo = async (
   }
 };
 
-export { getHomeSeo, updateHomeSeo };
+export { getHomeSeo, updateHomeSeo, getFacebook, getGoogle };

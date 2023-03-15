@@ -10,7 +10,7 @@ const Analytics = () => {
     error,
     isLoading,
     isError,
-  } = useGetData("analytics", `/analytics`);
+  } = useGetData("analytics", `/home/getGoogleId`);
 
   if (isLoading) return <Loader />;
 
@@ -21,7 +21,7 @@ const Analytics = () => {
   return (
     <>
       <Script
-        src={`https://www.googletagmanager.com/gtag/js?id=${tmp.code}`}
+        src={`https://www.googletagmanager.com/gtag/js?id=${tmp.googleId}`}
         strategy="afterInteractive"
       ></Script>
 
@@ -31,7 +31,7 @@ const Analytics = () => {
           function gtag(){window.dataLayer.push(arguments);}
           gtag('js', new Date());
 
-          gtag('config', '${tmp.code}');
+          gtag('config', '${tmp.googleId}');
         `}
       </Script>
     </>

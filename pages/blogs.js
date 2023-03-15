@@ -7,8 +7,6 @@ import { Loader } from "../components/common/Loader";
 export async function getServerSideProps() {
   const res = await fetch(`${process.env.BASE_URL}/api/getPublishedBlogs`);
   const data = await res.json();
-  console.log(data);
-
   return { props: { data } };
 }
 

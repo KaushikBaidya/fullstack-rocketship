@@ -1,10 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import Picture from "../../../public/gallery/picture.png";
 import Link from "next/link";
 import { Loader } from "../../common/Loader";
-import { Error } from "../../common/Error";
-import { useGetData } from "../../../hooks/DataApi";
+// import { Error } from "../../common/Error";
+// import { useGetData } from "../../../hooks/DataApi";
 
 const VisaProcess = ({ data }) => {
   // const {

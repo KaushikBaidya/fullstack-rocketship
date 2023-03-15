@@ -2,8 +2,8 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Loader } from "../../common/Loader";
-import { useGetData } from "../../../hooks/DataApi";
-import { Error } from "../../common/Error";
+// import { useGetData } from "../../../hooks/DataApi";
+// import { Error } from "../../common/Error";
 // import { FaRocket } from "react-icons/fa";
 
 const BlogsSection = ({ data }) => {
@@ -34,7 +34,7 @@ const BlogsSection = ({ data }) => {
               <div key={item.blogId} className="grid rounded-lg shadow-lg">
                 <Image
                   src={item.img}
-                  alt="Blog title"
+                  alt={item.title}
                   width={381}
                   height={200}
                   className="w-full rounded-t-lg object-cover object-center h-[150px]"

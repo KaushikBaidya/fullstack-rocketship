@@ -9,16 +9,16 @@ import BlogsSection from "../components/client/home/BlogsSection";
 import MetaComponents from "../components/MetaComponents";
 // import Instructors from "../components/client/about/Instructors";
 
-export async function getStaticProps() {
-  const res = await fetch(`${process.env.BASE_URL}/api/about/aboutView`);
-  const data = await res.json();
-  return { props: { data } };
-}
-// export async function getServerSideProps() {
+// export async function getStaticProps() {
 //   const res = await fetch(`${process.env.BASE_URL}/api/about/aboutView`);
 //   const data = await res.json();
 //   return { props: { data } };
 // }
+export async function getServerSideProps() {
+  const res = await fetch(`${process.env.BASE_URL}/api/about/aboutView`);
+  const data = await res.json();
+  return { props: { data } };
+}
 
 const AboutUs = ({ data }) => {
   const { hero, seo, blogs } = data;

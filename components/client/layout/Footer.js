@@ -7,6 +7,7 @@ import {
   FiMapPin,
   FiMail,
   FiPhoneCall,
+  FiInstagram,
 } from "react-icons/fi";
 import Link from "next/link";
 import Image from "next/image";
@@ -15,9 +16,9 @@ import logoPic from "../../../public/logo.png";
 const Footer = () => {
   return (
     <footer className="xl:max-w-screen-lg mx-auto mt-10">
-      <div className="w-full grid grid-cols-1 justify-items-center mt-10 ">
-        <div className="w-full grid grid-cols-1 md:grid-cols-3 justify-items-center gap-y-2 py-2 mt-2">
-          <div className="">
+      <div className="w-full grid grid-cols-1 justify-items-center mt-10">
+        <div className="w-full grid grid-cols-1 md:grid-cols-12 justify-items-center gap-y-2 py-2 mt-2">
+          <div className="col-span-3">
             <div className="grid grid-cols-1 justify-items-center">
               <Link href="/">
                 <div className="px-5">
@@ -32,18 +33,32 @@ const Footer = () => {
             </div>
             <div className="w-full flex flex-wrap gap-4 justify-center py-3">
               <div className="w-10 h-10 flex bg-[#211A56] justify-center items-center drop-shadow-xl rounded-lg text-[#fff] hover:bg-[#EF1C26]">
-                <Link href="#f">
+                <Link
+                  target="_blank"
+                  href="https://www.facebook.com/rocketshipeducation"
+                >
                   <FiFacebook size={26} />
                 </Link>
               </div>
-              <div className="w-10 h-10 flex bg-[#211A56] justify-center items-center drop-shadow-xl rounded-lg text-[#fff] hover:bg-[#EF1C26]">
+              {/* <div className="w-10 h-10 flex bg-[#211A56] justify-center items-center drop-shadow-xl rounded-lg text-[#fff] hover:bg-[#EF1C26]">
                 <Link href="#f">
                   <FiTwitter size={26} />
                 </Link>
+              </div> */}
+              <div className="w-10 h-10 flex bg-[#211A56] justify-center items-center drop-shadow-xl rounded-lg text-[#fff] hover:bg-[#EF1C26]">
+                <Link
+                  target="_blank"
+                  href="https://www.youtube.com/@rocketshipeducation"
+                >
+                  <FiYoutube size={26} />
+                </Link>
               </div>
               <div className="w-10 h-10 flex bg-[#211A56] justify-center items-center drop-shadow-xl rounded-lg text-[#fff] hover:bg-[#EF1C26]">
-                <Link href="#f">
-                  <FiYoutube size={26} />
+                <Link
+                  target="_blank"
+                  href="https://www.instagram.com/rocketshipeducation/"
+                >
+                  <FiInstagram size={26} />
                 </Link>
               </div>
               <div className="w-10 h-10 flex bg-[#211A56] justify-center items-center drop-shadow-xl rounded-lg text-[#fff] hover:bg-[#EF1C26]">
@@ -58,27 +73,53 @@ const Footer = () => {
             </div>
           </div>
 
-          <div>
+          <div className="text-sm col-span-5 place-content-center">
             <p className="text-2xl lg:text-3xl text-[#EF1C26] font-semibold  text-center px-5 mt-2 mb-4">
               Explore
             </p>
-            <p className="text-sm lg:text-lg text-[#EF1C26] font-normal text-center px-5 flex items-center gap-2 my-3">
-              <FiMapPin />
-              <span className="text-base text-gray-700">USA</span>
-            </p>
-            <p className="text-sm lg:text-lg text-[#EF1C26] font-normal text-center px-5 flex items-center gap-2 my-3">
+            <div className="grid grid-cols-1 md:grid-cols-2">
+              <div>
+                <p className="text-[#EF1C26] font-normal text-center px-5 flex items-center gap-2 my-3">
+                  <FiMapPin />
+                  <span className="text-gray-700">BANGLADESH</span>
+                </p>
+                <a
+                  href="https://wa.me/8801402461700"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-[#EF1C26] font-normal text-center px-5 flex items-center gap-2 my-3"
+                >
+                  <FiPhoneCall />
+                  <span className="text-gray-700">+8801402461700</span>
+                </a>
+              </div>
+              <div>
+                <p className="text-[#EF1C26] font-normal text-center px-5 flex items-center gap-2 my-3">
+                  <FiMapPin />
+                  <span className=" text-gray-700">USA</span>
+                </p>
+                <a
+                  href="https://wa.me/12135687269"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-[#EF1C26] font-normal text-center px-5 flex items-center gap-2 my-3"
+                >
+                  <FiPhoneCall />
+                  <span className=" text-gray-700">+1-213-568-7269</span>
+                </a>
+              </div>
+            </div>
+
+            <a
+              href="mailto:info@rocketshipedu.com"
+              className="text-[#EF1C26] font-normal px-5 flex items-center gap-2 my-3"
+            >
               <FiMail />
-              <span className="text-base text-gray-700">
-                info@rocketship.com
-              </span>
-            </p>
-            <p className="text-sm lg:text-lg text-[#EF1C26] font-normal text-center px-5 flex items-center gap-2 my-3">
-              <FiPhoneCall />
-              <span className="text-base text-gray-700">646-861-8089</span>
-            </p>
+              <span className="text-gray-700">info@rocketshipedu.com</span>
+            </a>
           </div>
 
-          <div>
+          <div className="col-span-4">
             <p className="text-2xl text-[#EF1C26] font-semibold  text-center px-5 mt-2 mb-4">
               Quick Links
             </p>

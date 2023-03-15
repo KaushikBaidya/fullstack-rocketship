@@ -3,7 +3,8 @@ import TopHeader from "../../../../components/admin/dashboard/TopHeader";
 import { useGetData, usePutData } from "../../../../hooks/DataApi";
 import { Loader } from "../../../../components/common/Loader";
 import { Error } from "../../../../components/common/Error";
-import SeoForm from "../../../../components/admin/forms/SeoForm";
+// import SeoForm from "../../../../components/admin/forms/SeoForm";
+import HomeSeoForm from "../../../../components/admin/forms/HomeSeoForm";
 
 function Details() {
   const { mutateAsync } = usePutData();
@@ -31,13 +32,14 @@ function Details() {
       />
 
       {tmp && (
-        <SeoForm
+        <HomeSeoForm
           defaultValues={{
             seoId: tmp.seoId,
             title: tmp.title,
             description: tmp.description,
             keywords: tmp.keywords,
             facebookApp: tmp.facebookApp,
+            googleId: tmp.googleId,
             image: tmp.image,
           }}
           action={refetch}

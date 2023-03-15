@@ -94,9 +94,14 @@ const Navbar = () => {
               </Link>
             </li> */}
             <li className="px-4 py-2 bg-red-600 font-medium mx-2 rounded-tl-3xl rounded-br-3xl hover:bg-[#f13841] text-white text-center">
-              <Link href="/consult" onClick={() => setNavbarOpen(!navbarOpen)}>
+              <a
+                href="https://calendly.com/rocketshipeducation"
+                target="_blank"
+                onClick={() => setNavbarOpen(!navbarOpen)}
+                rel="noreferrer"
+              >
                 Book A Free Consult
-              </Link>
+              </a>
             </li>
           </ul>
         </div>

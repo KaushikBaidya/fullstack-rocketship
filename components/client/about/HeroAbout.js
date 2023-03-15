@@ -5,6 +5,7 @@ import { Loader } from "../../common/Loader";
 const HeroAbout = ({ data }) => {
   if (!data) return <Loader />;
   const tmp = data;
+  console.log(data);
   return (
     <section className="max-w-screen-2xl mx-auto overflow-hidden bg-aboutBg">
       <div className="xl:max-w-screen-lg mx-auto grid grid-cols-1 lg:grid-cols-4 pb-16 pt-24 ">

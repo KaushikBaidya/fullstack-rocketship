@@ -6,7 +6,7 @@ import { toast } from "react-hot-toast";
 import { useRouter } from "next/router";
 import Input from "../Input";
 import SaveButton from "../../common/button/SaveButton";
-import TextArea from "../TextArea";
+// import TextArea from "../TextArea";
 import Image from "next/image";
 import InputFile from "../InputFile";
 
@@ -16,6 +16,7 @@ const schema = yup
     title: yup.string().required("Required."),
     description: yup.string().required("Required."),
     facebookApp: yup.string().required("Required."),
+    googleId: yup.string().required("Required."),
   })
   .shape({
     filepath: yup.mixed(),
@@ -44,7 +45,7 @@ const HomeSeoForm = ({
     defaultValues: defaultValues,
     resolver: yupResolver(schema),
   });
-  const { title, description, facebookApp, filepath } = errors;
+  const { title, description, facebookApp, filepath, googleId } = errors;
 
   const onSubmit = async (formData) => {
     if (imageUrl === "") {
@@ -59,6 +60,7 @@ const HomeSeoForm = ({
       description: formData.description,
       keywords: formData.keywords,
       facebookApp: formData.facebookApp,
+      googleId: formData.googleId,
       image: imageUrl,
     };
     try {
@@ -131,10 +133,18 @@ const HomeSeoForm = ({
         />
         <Input
           name="facebookApp"
-          label="Facebook App_id"
+          label="Facebook App Id"
           type="text"
           register={register}
           errorMessage={facebookApp?.message}
+        />
+
+        <Input
+          name="googleId"
+          label="Google Analytics Id"
+          type="text"
+          register={register}
+          errorMessage={googleId?.message}
         />
 
         <SaveButton btnText={btnText} disabled={submitting} />

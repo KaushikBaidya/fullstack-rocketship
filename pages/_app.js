@@ -11,6 +11,8 @@ import { SessionProvider } from "next-auth/react";
 import Router from "next/router";
 import NProgress from "nprogress";
 import Head from "next/head";
+import Facebook from "../components/Facebook";
+// import FacebookApp from "../components/FacebookApp";
 
 const queryClient = new QueryClient();
 
@@ -36,11 +38,13 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
           referrerPolicy="no-referrer"
         />
       </Head>
+      {/* <FacebookApp /> */}
       <QueryClientProvider client={queryClient}>
         <Toaster position="top-right" reverseOrder={false} />
         <AppProvider>
           <SessionProvider session={session}>
             <Analytics />
+            <Facebook />
             {router.pathname.split("/")[1] === "dashboard" ? (
               <Private>
                 <Component {...pageProps} />

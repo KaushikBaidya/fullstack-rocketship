@@ -44,10 +44,10 @@ function SideBar({ action }) {
               <AiFillHome className="text-red-500 mb-1" />
               <Link href="/dashboard/home">Home Page</Link>
             </li>
-            <li onClick={() => action()} className="flex items-center gap-1 ">
+            {/* <li onClick={() => action()} className="flex items-center gap-1 ">
               <BsGraphDown className="text-red-500 mb-1" />
               <Link href="/dashboard/analytics/edit">Analytics</Link>
-            </li>
+            </li> */}
             <li onClick={() => action()} className="flex items-center gap-1 ">
               <AiOutlineDeploymentUnit className="text-red-500 mb-1" />
               <Link href="/dashboard/service">Service Page</Link>

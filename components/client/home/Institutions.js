@@ -41,7 +41,7 @@ const Institutions = ({ data }) => {
                   spaceBetween: 40,
                 },
                 1024: {
-                  slidesPerView: 5,
+                  slidesPerView: 4,
                   spaceBetween: 30,
                 },
               }}
@@ -52,8 +52,8 @@ const Institutions = ({ data }) => {
                     <div className="px-5">
                       <Image
                         src={item.image}
-                        width={150}
-                        height={95}
+                        width={200}
+                        height={200}
                         alt="university list"
                       />
                     </div>

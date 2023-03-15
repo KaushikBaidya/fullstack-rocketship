@@ -40,7 +40,7 @@ const InnovativeCounselling = () => {
                     Parent Check-Ins
                   </h3>
                   <p className="mt-1 text-[.9rem] font-medium">
-                    SCommunicate with us and get to know your child&apos;s
+                    Communicate with us and get to know your child&apos;s
                     success and progress. Get tips about how to best support
                     their journey to their dream institute.
                   </p>
