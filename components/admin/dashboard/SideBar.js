@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { signOut } from "next-auth/react";
 
-import { useGlobalContext } from "../../../context/context";
+// import { useGlobalContext } from "../../../context/context";
 
 import logoPic from "../../../public/logo.png";
 
@@ -15,14 +15,19 @@ import {
   AiFillHome,
   AiOutlineDashboard,
   AiOutlineDeploymentUnit,
+  AiOutlineFundView,
   AiOutlineLogin,
+  AiOutlineMonitor,
   AiOutlinePieChart,
   AiOutlineRocket,
   AiOutlineSlack,
 } from "react-icons/ai";
 import { BsGraphDown } from "react-icons/bs";
+// import { getUser } from "../../../controller/userController";
 
 function SideBar({ action }) {
+  // const user = await getUser(email);
+  // console.log(user);
   return (
     <div className="fixed w-[200px] grid grid-rows-twoRows h-screen overflow-hidden bg-dark">
       <div className="grid place-content-center bg-purple-100 shadow-lg">
@@ -44,22 +49,12 @@ function SideBar({ action }) {
               <AiFillHome className="text-red-500 mb-1" />
               <Link href="/dashboard/home">Home Page</Link>
             </li>
+
             <li onClick={() => action()} className="flex items-center gap-1 ">
               <AiFillHome className="text-red-500 mb-1" />
-              <Link href="/dashboard/mycourses">My Courses</Link>
+              <Link href="/dashboard/course">Add Courses</Link>
             </li>
-            <li onClick={() => action()} className="flex items-center gap-1 ">
-              <AiFillHome className="text-red-500 mb-1" />
-              <Link href="/dashboard/allcourses">All Courses</Link>
-            </li>
-            <li onClick={() => action()} className="flex items-center gap-1 ">
-              <AiFillHome className="text-red-500 mb-1" />
-              <Link href="/dashboard/home">Add Courses</Link>
-            </li>
-            {/* <li onClick={() => action()} className="flex items-center gap-1 ">
-              <BsGraphDown className="text-red-500 mb-1" />
-              <Link href="/dashboard/analytics/edit">Analytics</Link>
-            </li> */}
+
             <li onClick={() => action()} className="flex items-center gap-1 ">
               <AiOutlineDeploymentUnit className="text-red-500 mb-1" />
               <Link href="/dashboard/service">Service Page</Link>
@@ -85,6 +80,15 @@ function SideBar({ action }) {
             <li onClick={() => action()} className="flex items-center gap-1 ">
               <AiOutlineSlack className="text-red-500 mb-1" />
               <Link href="/dashboard/consultation">Consultation</Link>
+            </li>
+
+            <li onClick={() => action()} className="flex items-center gap-1 ">
+              <AiOutlineMonitor className="text-red-500 mb-1" />
+              <Link href="/dashboard/user/mycourses">My Courses</Link>
+            </li>
+            <li onClick={() => action()} className="flex items-center gap-1 ">
+              <AiOutlineFundView className="text-red-500 mb-1" />
+              <Link href="/dashboard/user/allcourses">All Courses</Link>
             </li>
 
             <li className="flex items-center gap-1 ">
