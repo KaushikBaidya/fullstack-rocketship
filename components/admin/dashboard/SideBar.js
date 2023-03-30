@@ -44,6 +44,18 @@ function SideBar({ action }) {
               <AiFillHome className="text-red-500 mb-1" />
               <Link href="/dashboard/home">Home Page</Link>
             </li>
+            <li onClick={() => action()} className="flex items-center gap-1 ">
+              <AiFillHome className="text-red-500 mb-1" />
+              <Link href="/dashboard/mycourses">My Courses</Link>
+            </li>
+            <li onClick={() => action()} className="flex items-center gap-1 ">
+              <AiFillHome className="text-red-500 mb-1" />
+              <Link href="/dashboard/allcourses">All Courses</Link>
+            </li>
+            <li onClick={() => action()} className="flex items-center gap-1 ">
+              <AiFillHome className="text-red-500 mb-1" />
+              <Link href="/dashboard/home">Add Courses</Link>
+            </li>
             {/* <li onClick={() => action()} className="flex items-center gap-1 ">
               <BsGraphDown className="text-red-500 mb-1" />
               <Link href="/dashboard/analytics/edit">Analytics</Link>

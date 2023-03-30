@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { Loader } from "../components/common/Loader";
+import { Loader } from "../../components/common/Loader";
 
 export async function getServerSideProps() {
   const res = await fetch(`${process.env.BASE_URL}/api/getPublishedBlogs`);
@@ -9,14 +9,14 @@ export async function getServerSideProps() {
   return { props: { data } };
 }
 
-const Courses = ({ data }) => {
+const Mycourses = ({ data }) => {
   if (!data) return <Loader />;
   const tmp = data;
   return (
-    <div className="xl:max-w-screen-lg mx-auto grid grid-cols-1 justify-items-center content-center mb-20 py-28">
+    <div className="card w-full max-w-screen-xl">
       <div className="flex flex-col items-center mx-auto mb-5">
         <h2 className="text-xl text-[#211A56] font-semibold lg:text-4xl text-center px-5 uppercase tracking-wider">
-          Our Courses
+          My Courses
         </h2>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-6xl gap-5 p-5">
@@ -36,7 +36,7 @@ const Courses = ({ data }) => {
 
               <Link href={`/blog/${item.permalink}`}>
                 <button className="px-4 py-2 text-sm text-white bg-[#211A56] rounded-lg hover:bg-indigo-600">
-                  Read More
+                  Continue courses
                 </button>
               </Link>
             </div>
@@ -47,4 +47,4 @@ const Courses = ({ data }) => {
   );
 };
 
-export default Courses;
+export default Mycourses;
