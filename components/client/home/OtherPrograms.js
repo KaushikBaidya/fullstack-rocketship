@@ -15,9 +15,9 @@ const OtherPrograms = () => {
         </div>
         <div className="py-2">
           <div className="xl:max-w-screen-lg grid grid-cols-1 md:grid-cols-3 mx-auto gap-10">
-            <div className="w-full flex bg-white flex-col h-full py-10 px-5 rounded-tl-3xl rounded-br-3xl drop-shadow-2xl justify-evenly">
+            <div className="w-full flex bg-white flex-col h-full py-10 px-5 rounded-tl-3xl rounded-br-3xl drop-shadow-2xl justify-items-start">
               <div className="py-2 w-14">
-                <Image src={accepted} alt="accepted" />
+                <Image src={accepted} height={50} alt="accepted" />
               </div>
               <h2 className="text-[#211A56] font-semibold text-xl">
                 2x more to be accepted
@@ -27,9 +27,9 @@ const OtherPrograms = () => {
                 interview and get hired.
               </p>
             </div>
-            <div className="w-full flex bg-white flex-col h-full py-10 px-5 rounded-tl-3xl rounded-br-3xl drop-shadow-2xl justify-evenly">
+            <div className="w-full flex bg-white flex-col h-full py-10 px-5 rounded-tl-3xl rounded-br-3xl drop-shadow-2xl justify-items-start">
               <div className="py-2 w-14">
-                <Image src={sheets} alt="documents" />
+                <Image src={sheets} height={50} alt="documents" />
               </div>
               <h2 className="text-[#211A56] font-semibold text-xl">
                 Documents Ready.
@@ -39,9 +39,9 @@ const OtherPrograms = () => {
                 to present.
               </p>
             </div>
-            <div className="w-full flex bg-white flex-col h-full py-10 px-5 rounded-tl-3xl rounded-br-3xl drop-shadow-2xl justify-evenly">
+            <div className="w-full flex bg-white flex-col h-full py-10 px-5 rounded-tl-3xl rounded-br-3xl drop-shadow-2xl justify-items-start">
               <div className="py-2 w-14">
-                <Image src={running} alt="running" />
+                <Image src={running} height={50} alt="running" />
               </div>
               <h2 className="text-[#211A56] font-semibold text-xl">
                 Cut 2 Months

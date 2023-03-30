@@ -24,6 +24,7 @@ function Details() {
   if (isError) return <Error message={error.message} />;
 
   const tmp = list.data;
+  console.log(tmp);
 
   return (
     <div className="card w-full max-w-screen-xl">

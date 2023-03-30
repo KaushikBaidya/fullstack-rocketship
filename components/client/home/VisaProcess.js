@@ -36,7 +36,7 @@ const VisaProcess = ({ data }) => {
           <p className="text-base text-left md:text-justify pr-5 mt-5">
             {tmp.subtitle2}
           </p>
-          <div className="mt-10 text-sm font-medium">
+          {/* <div className="mt-10 text-sm font-medium">
             <Link href="/ourservice">
               <button className="px-9 py-3 text-[#211A56] bg-white border-2 border-[#F11B25] mr-4 rounded-tl-3xl rounded-br-3xl hover:shadow-red-500 hover:shadow-2xl hover:bg-[#F11b25] hover:text-white my-2">
                 Learn More
@@ -47,7 +47,7 @@ const VisaProcess = ({ data }) => {
                 Contact Us
               </button>
             </Link>
-          </div>
+          </div> */}
         </div>
         <div className="flex items-center justify-center mx-5">
           <div className="max-w-[500px] z-30">

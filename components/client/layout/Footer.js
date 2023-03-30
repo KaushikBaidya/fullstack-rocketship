@@ -77,8 +77,8 @@ const Footer = () => {
             <p className="text-2xl lg:text-3xl text-[#EF1C26] font-semibold  text-center px-5 mt-2 mb-4">
               Explore
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2">
-              <div>
+            <div className="grid grid-cols-1 md:grid-cols-5">
+              <div className="col-span-3">
                 <p className="text-[#EF1C26] font-normal text-center px-5 flex items-center gap-2 my-3">
                   <FiMapPin />
                   <span className="text-gray-700">BANGLADESH</span>
@@ -92,8 +92,15 @@ const Footer = () => {
                   <FiPhoneCall />
                   <span className="text-gray-700">+8801402461700</span>
                 </a>
+                <a
+                  href="mailto:info@rocketshipedu.com"
+                  className="text-[#EF1C26] font-normal px-5 flex items-center gap-2 my-3"
+                >
+                  <FiMail />
+                  <span className="text-gray-700">info@rocketshipedu.com</span>
+                </a>
               </div>
-              <div>
+              <div className="col-span-2">
                 <p className="text-[#EF1C26] font-normal text-center px-5 flex items-center gap-2 my-3">
                   <FiMapPin />
                   <span className=" text-gray-700">USA</span>
@@ -109,21 +116,13 @@ const Footer = () => {
                 </a>
               </div>
             </div>
-
-            <a
-              href="mailto:info@rocketshipedu.com"
-              className="text-[#EF1C26] font-normal px-5 flex items-center gap-2 my-3"
-            >
-              <FiMail />
-              <span className="text-gray-700">info@rocketshipedu.com</span>
-            </a>
           </div>
 
           <div className="col-span-4">
-            <p className="text-2xl text-[#EF1C26] font-semibold  text-center px-5 mt-2 mb-4">
+            <p className="text-2xl text-[#EF1C26] font-semibold mt-2 mb-4">
               Quick Links
             </p>
-            <div className="text-[#211A56] text-base grid grid-cols-1 justify-items-center">
+            <div className="text-[#211A56] text-base grid grid-cols-1 justify-items-start">
               <p className="hover:text-[#EF1C26]">
                 <Link href="/">Home</Link>
               </p>

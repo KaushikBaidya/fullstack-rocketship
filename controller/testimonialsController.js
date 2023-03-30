@@ -20,7 +20,7 @@ const getTestimonialById = async (testimonialId) => {
       [testimonialId]
     );
     connection.end(console.log("connection ended"));
-    return rows;
+    return rows[0];
   } catch (e) {
     console.error(e);
   }

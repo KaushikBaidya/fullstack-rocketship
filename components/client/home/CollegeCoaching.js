@@ -10,7 +10,7 @@ const CollegeCoaching = () => {
   return (
     <section className="w-full mt-5 lg:mt-20">
       <div className="max-w-5xl mx-auto text-center px-5">
-        <h1 className="text-2xl lg:text-4xl font-semibold text-[#221a55] px-10 py-2">
+        <h1 className="text-2xl lg:text-4xl font-semibold text-[#221a55] px-10 py-10">
           College Admissions Counseling
         </h1>
         <p className="text-base">

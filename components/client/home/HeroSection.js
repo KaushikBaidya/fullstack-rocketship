@@ -10,7 +10,7 @@ const HeroSection = ({ data }) => {
   const tmp = data;
 
   return (
-    <section className="bg-white antialiased ">
+    <section className="bg-white antialiased">
       <div className="lg:bg-sbanner bg-fixed">
         <div className="w-full bg-gradient-to-r from-[#302764fa] to-[#9588e9e8]">
           <div className="max-w-screen-lg mx-auto grid grid-cols-1 lg:grid-cols-2 py-20 z-10">
@@ -18,12 +18,12 @@ const HeroSection = ({ data }) => {
               <h1 className="text-2xl lg:text-[44px] leading-snug font-medium text-white pb-5 pt-20">
                 {tmp.title}
               </h1>
-              <h2 className="text-white text-center lg:text-left text-sm lg:text-base pr-5">
+              <h2 className="text-white text-center lg:text-left text-sm lg:text-base font-normal pr-5">
                 {tmp.subtitle}
               </h2>
               <div className="mt-10 text-sm font-medium">
                 <Link href="/ourservice">
-                  <button className="px-9 py-3 text-[#211A56] bg-white border-2 border-[#F11B25] mr-4 rounded-tl-3xl rounded-br-3xl hover:shadow-red-500 hover:shadow-2xl hover:bg-[#F11b25] hover:text-white my-2">
+                  <button className="px-9 py-3 hover:text-[#211A56] hover:bg-white border-2 border-[#F11B25] mr-4 rounded-tl-3xl rounded-br-3xl hover:shadow-red-500 hover:shadow-2xl bg-[#F11b25] text-white my-2">
                     College Admission
                   </button>
                 </Link>

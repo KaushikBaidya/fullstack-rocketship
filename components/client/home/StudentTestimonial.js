@@ -17,9 +17,11 @@ const StudentTestimonial = ({ data }) => {
       <div className="bg-sbanner bg-fixed">
         <div className="bg-[#221a55dc] text-white backdrop-blur-none  gap-y-3 px-10 py-20 justify-items-center content-center mx-auto">
           <div className="xl:max-w-screen-lg mx-auto grid grid-cols-1 lg:grid-cols-5">
-            <div className="col-span-2">
-              <p className="text-left text-base font-thin px-3">Reviews</p>
-              <p className="text-xl md:text-3xl px-3">
+            <div className="col-span-2 mt-2 mb-4">
+              <p className="text-left text-xl lg:text-4xl font-medium px-3">
+                Reviews
+              </p>
+              <p className="text-xl md:text-2xl font-normal px-3">
                 Happy students say about us
               </p>
             </div>
@@ -58,11 +60,11 @@ const StudentTestimonial = ({ data }) => {
                                 height={150}
                               />
                             </div>
-                            <p className="text-xs lg:text-sm text-justify text-gray-700 m-5">
+                            <p className="text-xs lg:text-base font-normal text-justify text-gray-700 m-5">
                               {item.description}
                             </p>
 
-                            <h3 className="text-xs lg:text-sm text-[#221a55] font-semibold mx-5">
+                            <h3 className="text-xs lg:text-base text-[#221a55] font-semibold mx-5">
                               {item.title}
                             </h3>
                             <p className="text-sm text-gray-700 mx-5 my-2">
