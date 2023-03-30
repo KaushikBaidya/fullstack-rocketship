@@ -8,6 +8,7 @@ import toast from "react-hot-toast";
 import { useRouter } from "next/navigation";
 import Input from "../components/admin/Input";
 import { Loader } from "../components/common/Loader";
+import Link from "next/link";
 
 const schema = yup.object({
   email: yup.string().required("Required.").max(50),
@@ -90,12 +91,12 @@ export default function Login() {
             >
               {loading ? <Loader /> : <p>login</p>}
             </button>
-            {/* <p className="pt-2 text-center text-sm text-black">
+            <p className="pt-2 text-center text-sm text-black">
               No account?
               <Link className="underline" href="/register">
                 Register
               </Link>
-            </p> */}
+            </p>
           </div>
         </form>
       </div>

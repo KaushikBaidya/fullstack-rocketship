@@ -50,7 +50,7 @@ const Navbar = () => {
             (navbarOpen ? "flex" : " hidden")
           }
         >
-          <ul className="flex flex-col lg:flex-row list-none lg:ml-auto text-center text-base">
+          <ul className="flex flex-col lg:flex-row list-none lg:ml-auto text-center text-sm">
             <li className="px-4 border-transparent border-b-4  py-2 font-medium uppercase">
               <Link
                 className="hover:text-[#EF1C24]"
@@ -86,6 +86,24 @@ const Navbar = () => {
                 onClick={() => setNavbarOpen(!navbarOpen)}
               >
                 Blogs
+              </Link>
+            </li>
+            <li className="px-4 border-transparent border-b-4 py-2 font-medium uppercase">
+              <Link
+                className="hover:text-[#EF1C24]"
+                href="/courses"
+                onClick={() => setNavbarOpen(!navbarOpen)}
+              >
+                Courses
+              </Link>
+            </li>
+            <li className="px-4 border-transparent border-b-4 py-2 font-medium uppercase">
+              <Link
+                className="hover:text-[#EF1C24]"
+                href="/login"
+                onClick={() => setNavbarOpen(!navbarOpen)}
+              >
+                Sign In
               </Link>
             </li>
             {/* <li className="px-4 border-transparent border-b-4 hover:border-[#EF1C24] py-2 font-medium uppercase">
