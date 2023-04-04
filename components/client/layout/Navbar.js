@@ -82,7 +82,7 @@ const Navbar = () => {
               </Link>
             </li>
 
-            <li className="px-4 border-transparent border-b-4 py-2 font-medium uppercase">
+            {/* <li className="px-4 border-transparent border-b-4 py-2 font-medium uppercase">
               <Link
                 className="hover:text-[#EF1C24]"
                 href="/blogs"
@@ -90,7 +90,7 @@ const Navbar = () => {
               >
                 Blogs
               </Link>
-            </li>
+            </li> */}
             <li className="px-4 border-transparent border-b-4 py-2 font-medium uppercase">
               <Link
                 className="hover:text-[#EF1C24]"
@@ -103,29 +103,29 @@ const Navbar = () => {
 
             {data?.user?.email ? (
               <>
-                <li>
-                  <Link href="/">
-                    <button
-                      onClick={() =>
-                        signOut({ redirect: false, callbackUrl: "/" })
-                      }
-                    >
-                      Sign Out
-                    </button>
-                  </Link>
+                <li className="px-4 border-transparent border-b-4 py-2 font-medium uppercase">
+                  <button
+                    onClick={() =>
+                      signOut({ redirect: false, callbackUrl: "/" })
+                    }
+                  >
+                    Sign Out
+                  </button>
                 </li>
                 <li className="px-4 border-transparent border-b-4 py-2 font-medium uppercase">
                   <Link href="/dashboard">Dashboard</Link>
                 </li>
               </>
             ) : (
-              <Link
-                className="hover:text-[#EF1C24]"
-                href="/login"
-                onClick={() => setNavbarOpen(!navbarOpen)}
-              >
-                Sign In
-              </Link>
+              <li className="px-4 border-transparent border-b-4 py-2 font-medium uppercase">
+                <Link
+                  className="hover:text-[#EF1C24]"
+                  href="/login"
+                  onClick={() => setNavbarOpen(!navbarOpen)}
+                >
+                  Sign In
+                </Link>
+              </li>
             )}
             {/* <li className="px-4 border-transparent border-b-4 hover:border-[#EF1C24] py-2 font-medium uppercase">
               <Link href="/Contact">

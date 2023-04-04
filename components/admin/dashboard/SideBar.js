@@ -78,7 +78,7 @@ function SideBar({ action }) {
             </li> */}
             <li onClick={() => action()} className="flex items-center gap-1 ">
               <AiFillHome className="text-red-500 mb-1" />
-              <Link href="/dashboard/home">Home Page</Link>
+              <Link href="/">Home Page</Link>
             </li>
             <li onClick={() => action()} className="flex items-center gap-1 ">
               <AiOutlineMonitor className="text-red-500 mb-1" />

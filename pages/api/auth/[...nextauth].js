@@ -18,10 +18,14 @@ export const authOptions = {
 
         const user = await getUser(email);
 
-        // console.log(user);
+        console.log(user.role);
         // const info = localStorage.setItem("User", user);
 
-        if (!user || !(await compare(password, user.password))) {
+        if (
+          !user ||
+          !(await compare(password, user.password)) ||
+          user.role === "admin"
+        ) {
           throw new Error("Invalid username or password");
         }
         return user;
