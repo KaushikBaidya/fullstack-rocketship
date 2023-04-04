@@ -22,7 +22,7 @@ const Private = ({ children }) => {
             <SideBar action={() => {}} />
           </div>
           <div className="grid grid-rows-twoRows w-full h-screen overflow-hidden ">
-            <Header email={session.user?.email} />
+            <Header email={session?.user?.email} />
             <div className="overflow-y-auto">
               <div className="grid grid-cols-1 lg:ml-[200px]">{children}</div>
             </div>

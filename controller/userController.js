@@ -24,7 +24,7 @@ const getUser = async (email) => {
     console.error(e);
   }
 };
-
+// console.log(getUser(email));
 const getUserById = async (userId) => {
   try {
     const connection = await mysql.createConnection(mysqlConfig);

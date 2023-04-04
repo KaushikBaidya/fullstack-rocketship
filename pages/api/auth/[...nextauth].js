@@ -19,6 +19,7 @@ export const authOptions = {
         const user = await getUser(email);
 
         // console.log(user);
+        // const info = localStorage.setItem("User", user);
 
         if (!user || !(await compare(password, user.password))) {
           throw new Error("Invalid username or password");
@@ -26,6 +27,7 @@ export const authOptions = {
         return user;
       },
     }),
+    // console.log(authorize),
   ],
 
   session: { strategy: "jwt" },

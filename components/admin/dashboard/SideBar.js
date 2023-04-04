@@ -23,11 +23,9 @@ import {
   AiOutlineSlack,
 } from "react-icons/ai";
 import { BsGraphDown } from "react-icons/bs";
-// import { getUser } from "../../../controller/userController";
 
 function SideBar({ action }) {
   const { data } = useSession();
-  console.log(data);
   return (
     <div className="fixed w-[200px] grid grid-rows-twoRows h-screen overflow-hidden bg-dark">
       <div className="grid place-content-center bg-purple-100 shadow-lg">
@@ -41,14 +39,11 @@ function SideBar({ action }) {
           {/* <Menu /> */}
           {/* <SideMenu /> */}
           <ul className="mt-5  text-left pl-3 flex flex-col gap-4 font-medium text-gray-100">
-            <li onClick={() => action()} className="flex items-center gap-1">
+            {/* <li onClick={() => action()} className="flex items-center gap-1">
               <AiOutlineRocket className="text-red-500 mb-1" />
               <Link href="/dashboard">Dashboard</Link>
             </li>
-            <li onClick={() => action()} className="flex items-center gap-1 ">
-              <AiFillHome className="text-red-500 mb-1" />
-              <Link href="/dashboard/home">Home Page</Link>
-            </li>
+            
 
             <li onClick={() => action()} className="flex items-center gap-1 ">
               <AiFillHome className="text-red-500 mb-1" />
@@ -80,16 +75,19 @@ function SideBar({ action }) {
             <li onClick={() => action()} className="flex items-center gap-1 ">
               <AiOutlineSlack className="text-red-500 mb-1" />
               <Link href="/dashboard/consultation">Consultation</Link>
+            </li> */}
+            <li onClick={() => action()} className="flex items-center gap-1 ">
+              <AiFillHome className="text-red-500 mb-1" />
+              <Link href="/dashboard/home">Home Page</Link>
             </li>
-
             <li onClick={() => action()} className="flex items-center gap-1 ">
               <AiOutlineMonitor className="text-red-500 mb-1" />
               <Link href="/dashboard/user/mycourses">My Courses</Link>
             </li>
-            <li onClick={() => action()} className="flex items-center gap-1 ">
+            {/* <li onClick={() => action()} className="flex items-center gap-1 ">
               <AiOutlineFundView className="text-red-500 mb-1" />
               <Link href="/dashboard/user/allcourses">All Courses</Link>
-            </li>
+            </li> */}
 
             <li className="flex items-center gap-1 ">
               <AiOutlineLogin className="text-red-500 mb-1" />

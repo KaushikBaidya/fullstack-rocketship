@@ -3,10 +3,13 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
 import logoPic from "../../../public/logo.png";
+import { signOut, useSession } from "next-auth/react";
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const [bgColor, setBgColor] = useState(false);
+  const { data, status } = useSession();
+  console.log(data?.user.email);
 
   useEffect(() => {
     const changeColor = () => {
@@ -97,7 +100,25 @@ const Navbar = () => {
                 Courses
               </Link>
             </li>
-            <li className="px-4 border-transparent border-b-4 py-2 font-medium uppercase">
+
+            {data?.user?.email ? (
+              <>
+                <li>
+                  <Link href="/">
+                    <button
+                      onClick={() =>
+                        signOut({ redirect: false, callbackUrl: "/" })
+                      }
+                    >
+                      Sign Out
+                    </button>
+                  </Link>
+                </li>
+                <li className="px-4 border-transparent border-b-4 py-2 font-medium uppercase">
+                  <Link href="/dashboard">Dashboard</Link>
+                </li>
+              </>
+            ) : (
               <Link
                 className="hover:text-[#EF1C24]"
                 href="/login"
@@ -105,7 +126,7 @@ const Navbar = () => {
               >
                 Sign In
               </Link>
-            </li>
+            )}
             {/* <li className="px-4 border-transparent border-b-4 hover:border-[#EF1C24] py-2 font-medium uppercase">
               <Link href="/Contact">
                 <a onClick={() => setNavbarOpen(!navbarOpen)}>Contact</a>
