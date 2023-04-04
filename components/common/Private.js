@@ -7,7 +7,7 @@ import { useRouter } from "next/router";
 const Private = ({ children }) => {
   const router = useRouter();
   const { data: session, status } = useSession();
-  console.log(session);
+  // console.log(status, session);
 
   if (status === "loading") return <Loader />;
   if (status === "unauthenticated") {

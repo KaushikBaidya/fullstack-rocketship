@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { signOut } from "next-auth/react";
+import { signOut, useSession } from "next-auth/react";
 
 // import { useGlobalContext } from "../../../context/context";
 
@@ -26,8 +26,8 @@ import { BsGraphDown } from "react-icons/bs";
 // import { getUser } from "../../../controller/userController";
 
 function SideBar({ action }) {
-  // const user = await getUser(email);
-  // console.log(user);
+  const { data } = useSession();
+  console.log(data);
   return (
     <div className="fixed w-[200px] grid grid-rows-twoRows h-screen overflow-hidden bg-dark">
       <div className="grid place-content-center bg-purple-100 shadow-lg">

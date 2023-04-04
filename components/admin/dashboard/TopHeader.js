@@ -7,7 +7,7 @@ import {
   AiOutlineCloseCircle,
 } from "react-icons/ai";
 
-const TopHeader = ({ title, btn = "None", show = 0, path = "" }) => {
+const TopHeader = ({ title, btn = "None", show = 0, path }) => {
   const router = useRouter();
   return (
     <div className="flex justify-between px-0 py-2 items-center">
@@ -43,4 +43,4 @@ const TopHeader = ({ title, btn = "None", show = 0, path = "" }) => {
   );
 };
 
-export default TopHeader; 
+export default TopHeader;

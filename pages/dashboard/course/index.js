@@ -29,7 +29,11 @@ const CourseList = () => {
   return (
     <main>
       <div className="card w-full">
-        <TopHeader title="Course list" btn="Save" path="/dashboard/blog/add" />
+        <TopHeader
+          title="Course list"
+          btn="Save"
+          path="/dashboard/course/add"
+        />
 
         <div className="list-wrapper">
           <div className="md:grid grid-cols-2 list-header">

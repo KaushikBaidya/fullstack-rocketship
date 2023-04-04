@@ -75,7 +75,7 @@ const BlogsForm = ({ defaultValues, path, mutateAsync, btnText }) => {
       }
       if (status === 204) {
         toast.success("Update successful!");
-        router.push("/dashboard/blog");
+        router.push("/dashboard/course");
       }
     } catch (error) {
       if (error.response) {

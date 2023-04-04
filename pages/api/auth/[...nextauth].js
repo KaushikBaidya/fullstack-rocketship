@@ -18,6 +18,8 @@ export const authOptions = {
 
         const user = await getUser(email);
 
+        // console.log(user);
+
         if (!user || !(await compare(password, user.password))) {
           throw new Error("Invalid username or password");
         }

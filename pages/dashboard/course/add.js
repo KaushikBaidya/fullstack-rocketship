@@ -17,13 +17,13 @@ const Add = () => {
 
   return (
     <div className="card w-full max-w-screen-xl">
-      <TopHeader title="Add New Blog" btn="Return" path="/dashboard/blog" />
+      <TopHeader title="Add New Course" btn="Return" path="/dashboard/course" />
       <BlogsForm
         defaultValues={defaultValues}
         action={() => {}}
         btnText="Save as Draft"
-        path="/blogs/createBlog"
-        returnPath="/dashboard/blog"
+        path="/course/createCourse"
+        returnPath="/dashboard/course"
         mutateAsync={mutateAsync}
       />
     </div>
