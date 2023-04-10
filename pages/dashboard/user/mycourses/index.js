@@ -63,7 +63,7 @@ const Mycourses = ({ data }) => {
           My Courses
         </h2>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-6xl gap-5 p-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 max-w-6xl gap-5 p-5">
         {tmp.map((item) => (
           <div key={item.course_id} className="grid rounded-lg shadow-lg">
             <Image

@@ -3,6 +3,7 @@ import Header from "../admin/dashboard/Header";
 import { useSession, getSession } from "next-auth/react";
 import { Loader } from "./Loader";
 import { useRouter } from "next/router";
+import Footer from "../client/layout/Footer";
 
 const Private = ({ children }) => {
   const router = useRouter();
@@ -16,17 +17,16 @@ const Private = ({ children }) => {
   if (status === "authenticated");
   return (
     <>
-      <div className="w-screen h-screen overflow-hidden">
-        <div className="grid w-full h-screen max-w-screen-3xl mx-auto">
-          <div className="hidden lg:block">
+      <div className="">
+        {/* <div className="hidden lg:block">
             <SideBar action={() => {}} />
+          </div> */}
+        <Header email={session?.user?.email} />
+        <div className="w-full h-full overflow-hidden ">
+          <div className="overflow-y-auto py-10 my-10">
+            <div className="max-w-5xl mx-auto pb-5">{children}</div>
           </div>
-          <div className="grid grid-rows-twoRows w-full h-screen overflow-hidden ">
-            <Header email={session?.user?.email} />
-            <div className="overflow-y-auto">
-              <div className="grid grid-cols-1 lg:ml-[200px]">{children}</div>
-            </div>
-          </div>
+          <Footer />
         </div>
       </div>
     </>

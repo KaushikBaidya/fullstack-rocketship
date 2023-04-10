@@ -1,5 +1,12 @@
+import Image from "next/image";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
+import {
+  AiOutlineEye,
+  AiOutlineFieldTime,
+  AiOutlinePlaySquare,
+} from "react-icons/ai";
+import ReactPlayer from "react-player";
 
 const ContinueCourse = () => {
   const [link, setLink] = useState("https://www.youtube.com/embed/J6uam9jEmDU");
@@ -38,29 +45,50 @@ const ContinueCourse = () => {
   ];
   // console.log(datas[0].content_links);
   return (
-    <div className="card w-full max-w-screen-xl">
-      <div className="grid lg:grid-cols-2 md:grid-cols-1">
-        <div>
-          <h1>Course video</h1>
-
-          <iframe
-            width="560"
-            height="315"
-            src={link}
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
-        </div>
-        <div className="flex items-center justify-center gap-5 flex-col cursor-pointer">
+    <div className="card w-full max-w-screen-xl py-4 mb-4">
+      <h1>Course video</h1>
+      <div className="grid lg:grid-cols-3 md:grid-cols-1 gap-4">
+        <div className="flex p-5 gap-3 flex-col cursor-pointer bg-gray-300 col-span-1 rounded-lg md:w-full">
+          <div className="font-bold text-xl md:text-lg">
+            {datas[0].course_name}
+          </div>
           {datas[0]?.content_links?.map((data) => (
             <>
-              <div onClick={() => setLink(data.video_link)}>
-                {data.video_title}
+              <div className="flex justify-center items-center gap-2">
+                {/* <AiOutlinePlaySquare className="w-10" /> */}
+                <div
+                  className="flex gap-4 bg-slate-700 rounded-xl text-white"
+                  onClick={() => setLink(data.video_link)}
+                >
+                  <Image
+                    src={datas[0].image_url}
+                    width={150}
+                    height={150}
+                    alt="image"
+                    className="rounded-l"
+                  />
+                  <div className="flex flex-col items-center justify-center">
+                    <p>{data.video_title} tutorial</p>
+                    <div className="flex gap-2 items-center justify-start">
+                      <div className="flex gap-1 items-center">
+                        <AiOutlineFieldTime /> <p> 10:42</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </>
           ))}
+        </div>
+        <div className="col-span-2">
+          <ReactPlayer
+            className="rounded-lg"
+            playing
+            width={"100%"}
+            height={"100%"}
+            controls
+            url={link}
+          />
         </div>
       </div>
     </div>

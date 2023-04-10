@@ -42,7 +42,7 @@ const createUser = async (email, hashedPassword, username) => {
   try {
     const connection = await mysql.createConnection(mysqlConfig);
     const [rows] = await connection.query(
-      "INSERT INTO user (  email, password, username) VALUES (?,?,?)",
+      "INSERT INTO user (  email, password, username,role) VALUES (?,?,?,'user')",
       [email, hashedPassword, username]
     );
     connection.end(console.log("connection ended"));
